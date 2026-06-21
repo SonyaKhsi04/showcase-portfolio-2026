@@ -192,8 +192,9 @@ strong {
   display: none;
   background: #f5efe7;
   color: #ff4d00;
-  min-height: 80vh;
-   padding: 0 80px 80px 80px;
+  min-height: unset;
+  padding: 0 80px 80px 80px;
+  height: auto;
 }
 
 .projectPagina.open {
@@ -203,6 +204,7 @@ strong {
 .projectContent {
   display: flex;
   gap: 50px;
+  align-items: flex-start;
 }
 
 .projectTekst {
@@ -212,17 +214,19 @@ strong {
 
 .projectAfbeeldingen {
   flex: 1;
-  margin-top: 0px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .projectAfbeeldingen img {
   width: 100%;
+  max-width: 500px;
+  height: auto;
 }
 
 .projectTekst h2 {
   font-size: 4rem;
   font-family: "BBHBartle";
-  fontcolor: #f2400a;
   margin-bottom: 30px;
 }
 
@@ -230,4 +234,65 @@ strong {
   font-size: 25px;
   font-family: "MontserratLight", "Poppins", sans-serif;
   margin-bottom: 20px;
+}
+.Links {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.TekstLinks p {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-family: "MontserratLight", sans-serif;
+}
+
+.TekstLinks a {
+  display: block;
+  color: #f2400a;
+  text-decoration: none;
+  font-family: "MontrealReg", sans-serif;
+  margin: 0;
+}
+
+.TekstLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactTitel {
+  font-size: 120px;
+  color: #f5ede6;
+  font-family: "BBHBartle", "Poppins", sans-serif;
+}
+
+.persoonlijkeFoto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.contactContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactLinks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contactLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "MontserratLight";
+  font-size: 1.2rem;
 }
