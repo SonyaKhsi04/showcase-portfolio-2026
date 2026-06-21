@@ -154,7 +154,7 @@ body {
 }
 strong {
   font-style: italic;
-  font-family: "MontserratLight", "Poppins", sans-serif;
+  font-family: "Montserrat", "Poppins", sans-serif;
 }
 
 .GridSectie {
@@ -186,4 +186,48 @@ strong {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.projectPagina {
+  display: none;
+  background: #f5efe7;
+  color: #ff4d00;
+  min-height: 80vh;
+   padding: 0 80px 80px 80px;
+}
+
+.projectPagina.open {
+  display: block;
+}
+
+.projectContent {
+  display: flex;
+  gap: 50px;
+}
+
+.projectTekst {
+  flex: 1;
+  padding-top: 100px;
+}
+
+.projectAfbeeldingen {
+  flex: 1;
+  margin-top: 0px;
+}
+
+.projectAfbeeldingen img {
+  width: 100%;
+}
+
+.projectTekst h2 {
+  font-size: 4rem;
+  font-family: "BBHBartle";
+  fontcolor: #f2400a;
+  margin-bottom: 30px;
+}
+
+.projectTekst p {
+  font-size: 25px;
+  font-family: "MontserratLight", "Poppins", sans-serif;
+  margin-bottom: 20px;
 }
